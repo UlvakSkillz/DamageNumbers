@@ -153,9 +153,9 @@ namespace DamageNumbers
                                 }
                                 if (damage != "")
                                 {
-                                    int x = 2;
+                                    int x = 5;
                                     if (i > 0) { x++; }
-                                    Transform playerTransform = PlayerManager.instance.AllPlayers[i].Controller.gameObject.transform.GetChild(x).GetChild(13).GetChild(0).gameObject.transform;
+                                    Transform playerTransform = PlayerManager.instance.AllPlayers[i].Controller.gameObject.transform.GetChild(x).GetChild(5).GetChild(0).gameObject.transform;
                                     GameObject damageNumber = Calls.Create.NewText();
                                     damageNumber.name = damage + " Damage";
                                     damageNumber.transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 1f, playerTransform.position.z);
@@ -274,7 +274,7 @@ namespace DamageNumbers
                 {
                     if (playerNumber != 0)
                     {
-                        damageNumber.transform.rotation = GetAngleToFaceMe(damageNumber.transform.position, PlayerManager.instance.localPlayer.Controller.gameObject.transform.GetChild(2).GetChild(13).GetChild(0).gameObject.transform.position);
+                        damageNumber.transform.rotation = GetAngleToFaceMe(damageNumber.transform.position, PlayerManager.instance.localPlayer.Controller.gameObject.transform.GetChild(1).GetChild(0).GetChild(0).gameObject.transform.position);
                     }
                     else
                     {
