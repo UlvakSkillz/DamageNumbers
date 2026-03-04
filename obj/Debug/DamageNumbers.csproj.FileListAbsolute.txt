@@ -22,7 +22,6 @@ C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\0Harmony.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\MonoMod.Utils.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\MonoMod.RuntimeDetour.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\bHapticsLib.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\AssetRipper.VersionUtilities.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Mono.Cecil.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\AssetsTools.NET.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Tomlet.dll
@@ -36,7 +35,6 @@ C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.C
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Iced.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.XR.Management.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.Physics2DModule.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Numerics.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.UnityWebRequestModule.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.SubsystemsModule.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.AIModule.dll
@@ -86,7 +84,6 @@ C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\System.Text.Js
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Microsoft.Diagnostics.NETCore.Client.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\RumbleModdingAPI.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppLIV.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppInterop.Generator.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppInterop.HarmonySupport.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.AssetBundleModule.dll
@@ -95,9 +92,7 @@ C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\MonoMod.ILHelp
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\obj\Debug\DamageNu.558C93D3.Up2Date
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppLIV.LCK.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppLIV.NativeAudioBridge.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Net.Http.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppNativeGallery.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppNewtonsoft.Json.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.VisualEffectGraph.Runtime.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.RenderPipelines.GPUDriven.Runtime.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.Collections.dll
@@ -105,8 +100,11 @@ C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.Un
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.PropertiesModule.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.HierarchyCoreModule.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.InputForUIModule.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Runtime.Serialization.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Data.dll
-C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Xml.Linq.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\UnityEngine.TerrainModule.dll
 C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.Burst.dll
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Unity.Profiling.Core.dll
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\AssetRipper.Primitives.dll
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppLIV.LCKCore.dll
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppLIV.LCKCore.ThirdParty.MessagePack.dll
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\MelonLoader.pdb
+C:\Users\austi\source\repos\DamageNumbers\DamageNumbers\bin\Debug\Il2CppSystem.Numerics.dll
