@@ -28,97 +28,97 @@ namespace DamageNumbers
                         || (previousHealth < newHealth) //prevents healing numbers
                         || (__instance.parentController.PlayerCamera.gameObject.transform == null) //makes sure player camera gameobject is spawned (error otherwise< in fact probably triggers the try/catch conveniently when I want to block it)
                         || (PlayerManager.instance.localPlayer.Controller.PlayerCamera.gameObject == null)) { return; } //makes sure local player camera game object exists (error otherwise< in fact probably triggers the try/catch conveniently when I want to block it)
+                    int amount = previousHealth - newHealth;
+                    Color color = Color.black;
+                    switch (amount)
+                    {
+                        case 1:
+                            color = new Color(249f / 255f, 250f / 255f, 165f / 255f, 1);
+                            break;
+                        case 2:
+                            color = new Color(254f / 255f, 228f / 255f, 89f / 255f, 1);
+                            break;
+                        case 3:
+                            color = new Color(254f / 255f, 168f / 255f, 4f / 255f, 1);
+                            break;
+                        case 4:
+                            color = new Color(251f / 255f, 107f / 255f, 43f / 255f, 1);
+                            break;
+                        case 5:
+                            color = new Color(250f / 255f, 63f / 255f, 76f / 255f, 1);
+                            break;
+                        case 6:
+                            color = new Color(247f / 255f, 0f / 255f, 145f / 255f, 1);
+                            break;
+                        case 7:
+                            color = new Color(90f / 255f, 111f / 255f, 255f / 255f, 1);
+                            break;
+                        case 8:
+                            color = new Color(57f / 255f, 133f / 255f, 87f / 255f, 1);
+                            break;
+                        case 9:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 10:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 11:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 12:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 13:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 14:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 15:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 16:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 17:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 18:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 19:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        case 20:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                        default:
+                            color = new Color(1f, 0f, 1f, 1);
+                            break;
+                    }
+                    Transform playerTransform = __instance.parentController.PlayerCamera.gameObject.transform;
+                    GameObject damageNumber = Create.NewText();
+                    damageNumber.name = amount + " Damage";
+                    damageNumber.transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 1f, playerTransform.position.z);
+                    damageNumber.transform.rotation = PlayerManager.instance.localPlayer.Controller.PlayerCamera.gameObject.transform.localRotation;
+                    if (__instance.parentController.controllerType == ControllerType.Local)
+                    {
+                        damageNumber.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+                    }
+                    TextMeshPro damageNumberText = damageNumber.GetComponent<TextMeshPro>();
+                    damageNumberText.fontSize = 12f;
+                    damageNumberText.text = amount.ToString();
+                    damageNumberText.color = color;
+                    damageNumberText.SetOutlineColor(new Color32(0, 0, 0, 255));
+                    damageNumberText.outlineWidth = 0.5f;
+                    MelonCoroutines.Start(MoveNumber(damageNumber, sceneCount, __instance.parentController));
+                    if (amount > 8)
+                    {
+                        MelonCoroutines.Start(RainbowColor(damageNumberText, sceneCount));
+                    }
+                    GameObject.Destroy(damageNumber, 4f);
                 }
-                catch {  return; }
-                int amount = previousHealth - newHealth;
-                Color color = Color.black;
-                switch (amount)
-                {
-                    case 1:
-                        color = new Color(249f / 255f, 250f / 255f, 165f / 255f, 1);
-                        break;
-                    case 2:
-                        color = new Color(254f / 255f, 228f / 255f, 89f / 255f, 1);
-                        break;
-                    case 3:
-                        color = new Color(254f / 255f, 168f / 255f, 4f / 255f, 1);
-                        break;
-                    case 4:
-                        color = new Color(251f / 255f, 107f / 255f, 43f / 255f, 1);
-                        break;
-                    case 5:
-                        color = new Color(250f / 255f, 63f / 255f, 76f / 255f, 1);
-                        break;
-                    case 6:
-                        color = new Color(247f / 255f, 0f / 255f, 145f / 255f, 1);
-                        break;
-                    case 7:
-                        color = new Color(90f / 255f, 111f / 255f, 255f / 255f, 1);
-                        break;
-                    case 8:
-                        color = new Color(57f / 255f, 133f / 255f, 87f / 255f, 1);
-                        break;
-                    case 9:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 10:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 11:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 12:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 13:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 14:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 15:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 16:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 17:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 18:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 19:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    case 20:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                    default:
-                        color = new Color(1f, 0f, 1f, 1);
-                        break;
-                }
-                Transform playerTransform = __instance.parentController.PlayerCamera.gameObject.transform;
-                GameObject damageNumber = Create.NewText();
-                damageNumber.name = amount + " Damage";
-                damageNumber.transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 1f, playerTransform.position.z);
-                damageNumber.transform.rotation = PlayerManager.instance.localPlayer.Controller.PlayerCamera.gameObject.transform.localRotation;
-                if (__instance.parentController.controllerType == ControllerType.Local)
-                {
-                    damageNumber.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
-                }
-                TextMeshPro damageNumberText = damageNumber.GetComponent<TextMeshPro>();
-                damageNumberText.fontSize = 12f;
-                damageNumberText.text = amount.ToString();
-                damageNumberText.color = color;
-                damageNumberText.SetOutlineColor(new Color32(0, 0, 0, 255));
-                damageNumberText.outlineWidth = 0.5f;
-                MelonCoroutines.Start(MoveNumber(damageNumber, sceneCount, __instance.parentController));
-                if (amount > 8)
-                {
-                    MelonCoroutines.Start(RainbowColor(damageNumberText, sceneCount));
-                }
-                GameObject.Destroy(damageNumber, 4f);
+                catch { return; }
             }
         }
 
@@ -203,6 +203,7 @@ namespace DamageNumbers
             }
             yield break;
         }
+
         private static Quaternion GetAngleToFaceMe(Vector3 objectPosition, Vector3 lookAtPosition)
         {
             Vector3 targetDir = objectPosition - lookAtPosition;
